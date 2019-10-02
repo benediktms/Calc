@@ -1,8 +1,10 @@
+body {
+    background-image: linear-gradient(to right, blue, blueviolet);
+}
 .wrapper {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(5, 50px);
-    background: #FFCCCC;
     grid-gap: 0.5em;
     font-size: 20px;
 }
@@ -11,7 +13,6 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 50px);
     grid-gap: 0.5em;
-    background: #FFCCCC;
     grid-row: 1/6;
     grid-column: 5/9;
     align-items: stretch;
@@ -79,7 +80,12 @@
 }
 #equals {
     grid-row: 5;
-    grid-column: 2/4;
+    grid-column: 2;
+    background: orange;
+}
+#AC {
+    grid-row: 5;
+    grid-column: 3;
     background: orange;
 }
 #plus {
