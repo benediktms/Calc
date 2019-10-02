@@ -6,19 +6,6 @@
     grid-gap: 0.5em;
     font-size: 20px;
 }
-.btn {
-    background: white;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-}
-.operator {
-    background: beige;
-    display: flex;
-    align-items: center;
-}
-
 #grid {
     display: inline-grid;
     grid-template-columns: repeat(4, 1fr);
@@ -27,13 +14,28 @@
     background: #FFCCCC;
     grid-row: 1/6;
     grid-column: 5/9;
-    
+    align-items: stretch;
+}
+.btn {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.operator {
+    background: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #display {
     display: flex;
     grid-column: 1/5;
     background: black;
+    color: white;
+    align-items: center;
+    padding: 10px;
 }
 #one {
     grid-row: 2;
