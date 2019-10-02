@@ -8,6 +8,15 @@ body {
     grid-gap: 0.5em;
     font-size: 20px;
 }
+#display-two {
+    display: flex;
+    color: white;
+    grid-row: 2/6;
+    grid-column: 10/12;
+
+    align-items: center;
+    justify-content: center;
+}
 #grid {
     display: inline-grid;
     grid-template-columns: repeat(4, 1fr);
