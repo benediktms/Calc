@@ -37,16 +37,9 @@ const calcObj = {
     // logic
     firstOperator: 0,
     secondOperator: 0,
+    calcUI: document.getElementById('grid'),
 };
 
-function testResponse (event) {
-    let x = event.target;
-    document.getElementById('display-two').textContent = x;
-    console.log(x);
-}
-
-function f() {
-    document.addEventListener('click', function() {
-        testResponse();
-    })
-}
+calcObj.calcUI.addEventListener('click', function (event) {
+    console.log(event.target);
+});
