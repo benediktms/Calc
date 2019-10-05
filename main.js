@@ -14,7 +14,7 @@
 
 const calcObj = {
     // numbers
-    one: document.getElementById('one'),
+    one: document.getElementById('one').textContent,
     two: document.getElementById('two'),
     three: document.getElementById('three'),
     four: document.getElementById('four'),
@@ -38,8 +38,11 @@ const calcObj = {
     firstOperator: 0,
     secondOperator: 0,
     calcUI: document.getElementById('grid'),
+    //targetID: event.target.id,
 };
 
 calcObj.calcUI.addEventListener('click', function (event) {
-    console.log(event.target);
+    // gets the number that was pressed and adds it to the first operator value
+    calcObj.firstOperator = event.target.textContent;
+    console.log(calcObj.firstOperator);
 });
