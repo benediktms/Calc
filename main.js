@@ -35,14 +35,19 @@ const calcObj = {
     float: document.getElementById('float'),
 
     // logic
-    firstOperator: 0,
-    secondOperator: 0,
     calcUI: document.getElementById('grid'),
-    //targetID: event.target.id,
+    calcVar: [],
 };
 
 calcObj.calcUI.addEventListener('click', function (event) {
+    let targetBtn = event.target
     // gets the number that was pressed and adds it to the first operator value
-    calcObj.firstOperator = event.target.textContent;
+    calcObj.firstOperator = targetBtn.textContent;
     console.log(calcObj.firstOperator);
+
+    switch (targetBtn.id) {
+        case 'default':
+            console.log(targetBtn.id);
+        case 'equals':
+    }
 });
