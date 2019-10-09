@@ -36,18 +36,22 @@ const calcObj = {
 
     // logic
     calcUI: document.getElementById('grid'),
-    calcVar: [],
+    pastNumbers: [],
+    numbers: [],
 };
 
 calcObj.calcUI.addEventListener('click', function (event) {
-    let targetBtn = event.target
+    const targetBtn = event.target;
     // gets the number that was pressed and adds it to the first operator value
     calcObj.firstOperator = targetBtn.textContent;
     console.log(calcObj.firstOperator);
 
     switch (targetBtn.id) {
         case 'default':
+            calcObj.numbers.prototype.push(targetBtn.textContent);
             console.log(targetBtn.id);
         case 'equals':
+            console.log(targetBtn.id);
+        case 'AC':
     }
 });
