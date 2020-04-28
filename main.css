@@ -2,22 +2,19 @@ body {
     background-image: linear-gradient(to right, blue, blueviolet);
 }
 .wrapper {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 50px);
-    grid-gap: 0.5em;
-    font-size: 20px;
-}
-#display-two {
     display: flex;
-    color: white;
-    grid-row: 2/6;
-    grid-column: 10/12;
-
-    align-items: center;
-    justify-content: center;
 }
+/*#display-two {*/
+/*    display: flex;*/
+/*    color: white;*/
+/*    grid-row: 2/6;*/
+/*    grid-column: 10/12;*/
+
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
 #grid {
+    /*grid style*/
     display: inline-grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 50px);
@@ -25,6 +22,14 @@ body {
     grid-row: 1/6;
     grid-column: 5/9;
     align-items: stretch;
+
+    /*position style*/
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
 }
 .btn {
     background: white;

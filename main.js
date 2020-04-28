@@ -33,7 +33,7 @@ calcObj.numbers.forEach(button => button.addEventListener('click', function () {
 calcObj.operators.forEach(button => button.addEventListener('click', function () {
     calcObj.updateDisplay(button.textContent);
 }));
-// lisening for del press and updating display to remove last character entered
+// listening for del press and updating display to remove last character entered
 document.getElementById('del').addEventListener('click', function () {
     calcObj.getDisplay().textContent = calcObj.getDisplay().textContent.slice(0, -1);
 });
